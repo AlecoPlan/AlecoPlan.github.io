@@ -282,15 +282,8 @@
           
 
   
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
-    </div>
-
   
-
-
+  
 
         </div>
         
@@ -596,48 +589,34 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'AlecoPlan# MUST HAVE, Your Github ID',
-            repo: 'AlecoPlan.github.io# MUST HAVE, The repo you use to store Gitment comments',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'bd9614018648cb870d94fd4f76ff7cd398ba195b# EITHER this or proxy_gateway, Github access secret token for the Gitment',
-            
-                client_id: '05df5d317dea3b921adf# MUST HAVE, Github client id for the Gitment'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
 
 
 
 
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '72751f8a743e95955474',
+          clientSecret: 'edf23a2f7689ad36def129dd5fc4400028f08fad',
+          repo: 'AlecoPlan.github.io',
+          owner: '',
+          admin: AlecoPlan,
+          id: ,
+          labels: ,
+          perPage: ,
+          pagerDirection: '',
+          createIssueManually: ,
+          distractionFreeMode: true
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
+.gt-container a{border-bottom: none;}
   
 
 
