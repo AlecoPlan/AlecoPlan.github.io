@@ -282,8 +282,12 @@
           
 
   
+	<div id="gitalk-container"></div>
   
-  
+
+
+
+
 
         </div>
         
@@ -594,24 +598,17 @@
 
 
 
-
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
    <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: '72751f8a743e95955474',
           clientSecret: 'edf23a2f7689ad36def129dd5fc4400028f08fad',
           repo: 'AlecoPlan.github.io',
-          owner: '',
-          admin: AlecoPlan,
-          id: ,
-          labels: ,
-          perPage: ,
-          pagerDirection: '',
-          createIssueManually: ,
-          distractionFreeMode: true
+          owner: 'AlecoPlan',
+          admin: ['AlecoPlan'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')           
        </script>
